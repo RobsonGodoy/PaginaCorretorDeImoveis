@@ -26,26 +26,29 @@ Bem-vindo ao repositório da aplicação RS Imobiliária! Esta aplicação foi d
    git clone https://github.com/RobsonGodoy/PaginaCorretorDeImoveis
 Instale as Dependências:
 ```
-cd RSLanding/backend
-npm install
+    cd RSLanding/backend
+    npm install
 
-cd ../backend
+    cd ../backend
 
-cd RSLanding/frontend
-npm install
+    cd RSLanding/frontend
+    npm install
 ```
 Configure o Ambiente:
 
 Crie um arquivo .env na pasta backend para configurar variáveis de ambiente, incluindo a conexão com o MongoDB.
 
 Inicie o Servidor:
+```
 cd backend
 npm start
+```
 
 Inicie o Frontend:
+```
 cd frontend
 npm start
-
+```
 Acesse a aplicação em http://localhost:5173 no seu navegador.
 
 
