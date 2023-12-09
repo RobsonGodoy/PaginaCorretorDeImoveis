@@ -27,10 +27,11 @@ Bem-vindo ao repositório da aplicação RS Imobiliária! Esta aplicação foi d
 Instale as Dependências:
 ```
 cd RSLanding/backend
-
 npm install
 
 cd ../backend
+
+cd RSLanding/frontend
 npm install
 ```
 Configure o Ambiente:
