@@ -1,0 +1,25 @@
+[
+    {
+      "titulo": "Loteamento Sol Nascente",
+      "localizacao": "Rua das Flores, 123",
+      "tamanho": "300 m²",
+      "preco": "R$ 150.000",
+      "id": 1
+    },
+    {
+      "titulo": "Residencial Primavera",
+      "localizacao": "Avenida dos Pássaros, 456",
+      "tamanho": "500 m²",
+      "preco": "R$ 250.000",
+      "id": 2
+    },
+    {
+      "titulo": "Condomínio Vista Verde",
+      "localizacao": "Alameda das Árvores, 789",
+      "tamanho": "400 m²",
+      "preco": "R$ 200.000",
+      "id": 3
+    }
+   
+  ]
+  

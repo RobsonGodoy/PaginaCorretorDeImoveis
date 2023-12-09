@@ -1,0 +1,33 @@
+/* CSS para .Sec01 */
+.Sec01 {
+    position: relative;
+    height: 600px; /* Defina a altura desejada para a seção */
+    background-image: url('../images/loteamentoRS.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Cor do texto */
+    text-align: center;
+    overflow: hidden; /* Ocultar qualquer overflow da imagem */
+  }
+  
+  /* Adicione um pseudo-elemento para criar um fundo semi-transparente */
+  .Sec01::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    z-index: -1; /* Coloque o pseudo-elemento atrás do conteúdo */
+  }
+  .Sec01 h1 {
+    background-color: #0f03443a;
+    border-radius: 0.3rem;
+    color: rgb(235, 168, 0);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  }
+  

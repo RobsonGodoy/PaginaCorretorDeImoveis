@@ -1,0 +1,20 @@
+.Empreendimento {
+    margin: 20px;
+    width: 240px;
+    height: 200px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid goldenrod;
+    background-color: rgba(240, 234, 222, 0.712);
+    border-radius: 0.25rem;
+}
+@media (min-width: 768px) {
+    .Empreendimento{
+        width: 320px;
+        height: 240px;
+    }
+}

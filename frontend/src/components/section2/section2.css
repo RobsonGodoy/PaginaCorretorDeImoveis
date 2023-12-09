@@ -1,0 +1,102 @@
+.Sec02 {
+  background-color: white;
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  min-height: calc(80vh - 120px);
+
+}
+
+.Sec02 label {
+  text-align: center;
+  background-color: white;
+  color: rgb(173, 125, 2);
+  font-weight: 700;
+}
+
+/* Estilizando o elemento select */
+select {
+  margin-top: 1rem;
+  margin-bottom: 55px;
+  width: 250px;
+  /* Defina o tamanho desejado */
+  padding: 10px;
+  /* Espaçamento interno */
+  font-size: 18px;
+  /* Tamanho da fonte */
+  border: 2px solid rgb(173, 125, 2);
+  /* Estilo da borda */
+  background-color: #f7f7f7;
+  /* Cor de fundo */
+  color: #333;
+  /* Cor do texto */
+  border-radius: 0.25rem;
+  /* Bordas arredondadas */
+  outline: none;
+  /* Remover a borda de foco */
+}
+
+/* Estilizando as opções */
+select option {
+  font-size: 14px;
+  /* Tamanho da fonte para as opções */
+  background-color: #fff;
+  /* Cor de fundo das opções */
+  color: #333;
+  /* Cor do texto das opções */
+}
+
+/* Estilizando as opções quando hover */
+select option:hover {
+  background-color: #ccc;
+  /* Cor de fundo ao passar o mouse sobre as opções */
+  color: #fff;
+  /* Cor do texto ao passar o mouse sobre as opções */
+}
+
+/* Estilizando o elemento submit */
+button[type="submit"] {
+  margin: 1rem 0;
+  background-color: goldenrod;
+  /* Cor de fundo do botão */
+  color: #fff;
+  /* Cor do texto do botão */
+  border: none;
+  /* Remova a borda do botão */
+  padding: 10px 20px;
+  /* Espaçamento interno do botão */
+  font-size: 16px;
+  /* Tamanho da fonte do botão */
+  cursor: pointer;
+  /* Transforme o cursor em uma mão ao passar sobre o botão */
+  border-radius: 4px;
+  /* Bordas arredondadas do botão */
+}
+
+/* Estilizando o botão quando hover */
+button[type="submit"]:hover {
+  background-color: rgb(161, 119, 11);
+  /* Cor de fundo do botão ao passar o mouse */
+}
+
+.loteamentos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(161, 119, 11);
+  border-radius: 0.25rem;
+  margin-bottom: 25px;
+}
+
+.loteamentos li {
+  font-size: 22px;
+  padding: 3px 31px;
+  text-decoration: none;
+  list-style: none;
+  gap: 5px;
+
+}

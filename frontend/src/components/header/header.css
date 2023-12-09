@@ -1,0 +1,100 @@
+.Header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #001127;
+
+}
+
+#logotipoHeader {
+  width: 100px;
+  height: auto;
+}
+
+.Hcel a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  color: rgb(247, 179, 9);
+  border: 1px solid rgb(247, 179, 9);
+  border-radius: 0.25rem;
+  background-color: white;
+  transition: 1s;
+}
+
+.Hcel a:hover {
+  background-color: rgb(250, 194, 51);
+  color: #001127;
+  border: #001127;
+  transition: 1s;
+}
+
+.Hoption h4,
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.Header img {
+  padding: 0 1rem;
+}
+
+.Hcontato {
+  display: flex;
+  padding-top: 0.5rem;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Hoption {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Hoption a {
+  font-weight: 700;
+  padding: 0.15rem 0.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.Hoption a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, transparent 0%, goldenrod 0%);
+  transition: width 0.5s ease;
+}
+
+/* Quando houver hover, aumente a largura do gradiente */
+.Hoption a:hover::before {
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .Header {
+    display: flex;
+    flex-direction: column;
+  }
+  .Hcel a {
+    width: 300px;
+    margin: auto;
+  }
+  .Hcontato {
+    margin-top: -85px;
+    padding-left: 185px;
+  }
+  .Hoption{
+    padding-top: 15px;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,77 @@
+.Footer {
+    width: 100%;
+    height: 120px;
+    position: static;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #001127;
+    color: white;
+  }
+  
+  .Fcel a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    color: rgb(247, 179, 9);
+    border: 1px solid rgb(247, 179, 9);
+    border-radius: 0.25rem;
+    background-color: white;
+    transition: 1s;
+  }
+  
+  .Fcel a:hover {
+    background-color: rgb(250, 194, 51);
+    color: #001127;
+    border: #001127;
+    transition: 1s;
+  }
+  
+  .Foption {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .Foption a {
+    font-weight: 700;
+    padding: 0.15rem 0.8rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .Foption a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, transparent 0%, goldenrod 0%);
+    transition: width 0.5s ease;
+  }
+  
+  /* Quando houver hover, aumente a largura do gradiente */
+  .Foption a:hover::before {
+    width: 100%;
+  }
+  
+  @media (min-width: 769px) {
+    .Footer {
+      display: flex;
+      flex-direction: column;
+    }
+    .Fcel a {
+      width: 300px;
+      margin: auto;
+    }
+    .Foption {
+      padding-top: 15px;
+      flex-direction: row;
+    }
+  }
+  

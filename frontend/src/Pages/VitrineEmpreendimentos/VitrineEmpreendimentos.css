@@ -1,0 +1,23 @@
+
+.TituloEmpreendimento {
+    font-size: 2rem;
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(177, 128, 5);
+}
+
+.SectionEmpreendimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 120px)
+
+}
+@media (min-width: 768px) {
+    .SectionEmpreendimento{
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
