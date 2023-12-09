@@ -22,7 +22,7 @@ Bem-vindo ao repositório da aplicação RS Imobiliária! Esta aplicação foi d
 ## Como Iniciar a Aplicação
 
 1. **Clone o Repositório:**
-   ```bash
+   
    git clone https://github.com/RobsonGodoy/PaginaCorretorDeImoveis
 Instale as Dependências:
 
