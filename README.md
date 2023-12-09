@@ -52,6 +52,5 @@ npm start
 Acesse a aplicação em http://localhost:5173 no seu navegador.
 
 
-Autor
+# Autor
 Robson Godoy
-GitHub: RobsonGodoy
