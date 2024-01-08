@@ -4,5 +4,6 @@ export default interface IEmpreendimento {
     titulo: string,
     localizacao: string,
     tamanho: number,
-    preco: number
+    preco: number,
+    photo?: string
 }
