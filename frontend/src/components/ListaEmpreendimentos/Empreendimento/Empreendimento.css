@@ -1,10 +1,9 @@
 .Empreendimento {
     margin: 20px;
-    width: 240px;
-    height: 200px;
-    gap: 10px;
+    width: 250px;
+    height: 240px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -15,14 +14,38 @@
     transition: 0.5s;
 }
 
-.Empreendimento:hover{
+.Empreendimento:hover {
     box-shadow: 0px 0px 25px rgb(102, 73, 0);
     zoom: 1.005;
     transition: 0.5s;
 }
+
+.EmpreendimentoFoto {
+    max-height: 50px;
+    padding-top: 1rem;
+
+}
+
+.EmpreendimentoDescricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 1.5;
+}
+
 @media (min-width: 768px) {
-    .Empreendimento{
+    .Empreendimento {
         width: 320px;
-        height: 240px;
+        height: 340px;
+    }
+    .EmpreendimentoDescricao {
+        line-height: 1.8;
+        font-size: 18px;
+    }
+    .EmpreendimentoFoto {
+        max-height: 90px;
+        padding-top: 3rem
     }
 }

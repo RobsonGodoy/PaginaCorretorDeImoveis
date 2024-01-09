@@ -17,10 +17,12 @@ const Empreendimento = ({ empreendimento }: EmpreendimentoPros) => {
                     />
                 )}
             </div>
-            <h2>{empreendimento.titulo}</h2>
-            <h5>{empreendimento.localizacao}</h5>
-            <h5>Tamanho: {empreendimento.tamanho}m²</h5>
-            <h4>Preço: R${empreendimento.preco},00</h4>
+            <div className="EmpreendimentoDescricao">
+                <h2>{empreendimento.titulo}</h2>
+                <h5>{empreendimento.localizacao}</h5>
+                <h5>Tamanho: {empreendimento.tamanho}m²</h5>
+                <h4>Preço: R${empreendimento.preco},00</h4>
+            </div>
         </div>
     )
 

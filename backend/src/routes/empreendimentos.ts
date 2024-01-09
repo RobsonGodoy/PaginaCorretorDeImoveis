@@ -32,10 +32,10 @@ router.get('/:id', async (req, res) => {
 
 // Rota para adicionar um novo empreendimento
 router.post('/', async (req, res) => {
-  const { titulo, localizacao, tamanho, preco } = req.body;
+  const { titulo, localizacao, tamanho, preco, photo } = req.body;
 
   try {
-    const novoEmpreendimento = new Empreendimento({ titulo, localizacao, tamanho, preco });
+    const novoEmpreendimento = new Empreendimento({ titulo, localizacao, tamanho, preco, photo });
     await novoEmpreendimento.save();
     res.json(novoEmpreendimento);
   } catch (error) {
@@ -46,12 +46,12 @@ router.post('/', async (req, res) => {
 
 // Rota para atualizar um empreendimento pelo ID
 router.put('/:id', async (req, res) => {
-  const { titulo, localizacao, tamanho, preco } = req.body;
+  const { titulo, localizacao, tamanho, preco, photo } = req.body;
 
   try {
     const empreendimentoAtualizado = await Empreendimento.findByIdAndUpdate(
       req.params.id,
-      { titulo, localizacao, tamanho, preco },
+      { titulo, localizacao, tamanho, preco, photo },
       { new: true }
     );
 

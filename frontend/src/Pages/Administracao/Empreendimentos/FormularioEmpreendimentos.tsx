@@ -1,4 +1,4 @@
-import { Box, Button, Paper, TextField, Typography } from "@mui/material"
+import { Box, Button, Input, Paper, TextField, Typography } from "@mui/material"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import http from "../../../components/http"
@@ -11,6 +11,7 @@ const FormularioEmpreendimentos = () => {
     const [localizacaoEmpreendimento, setLocalizacaoEmpreendimento] = useState('');
     const [tamanhoEmpreendimento, setTamanhoEmpreendimento] = useState<number>(0);
     const [precoEmpreendimento, setPrecoEmpreendimento] = useState<number>(0);
+    const [photoEmpreendimento, setPhotoEmpreendimento] = useState<string>('')
 
     const parametros = useParams<{ id?: string }>()
     useEffect(() => {
@@ -34,6 +35,7 @@ const FormularioEmpreendimentos = () => {
             localizacao: localizacaoEmpreendimento,
             tamanho: tamanhoEmpreendimento,
             preco: precoEmpreendimento,
+            photo: photoEmpreendimento
         };
         try {
             if (parametros.id) {
@@ -84,6 +86,14 @@ const FormularioEmpreendimentos = () => {
                             fullWidth
                             required
                             type="number"
+                        />
+                        <Input
+                            type="file"
+                            onChange={(evento: React.ChangeEvent<HTMLInputElement>) => {
+                                if (evento.target.files) {
+                                    setPhotoEmpreendimento(URL.createObjectURL(evento.target.files[0]));
+                                }
+                            }}
                         />
                         <TextField
                             value={precoEmpreendimento}

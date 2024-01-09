@@ -5,6 +5,7 @@ export interface IEmpreendimento extends Document {
   localizacao: string;
   tamanho: number;
   preco: number;
+  photo: string
 }
 
 const empreendimentoSchema: Schema = new Schema({
@@ -12,6 +13,8 @@ const empreendimentoSchema: Schema = new Schema({
   localizacao: { type: String, required: true },
   tamanho: { type: Number, required: true },
   preco: { type: Number, required: true },
+  photo: { type: String, required: false },
+
 });
 
 const Empreendimento = mongoose.model<IEmpreendimento>('Empreendimento', empreendimentoSchema);
